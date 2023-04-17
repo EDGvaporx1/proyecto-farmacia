@@ -1,0 +1,25 @@
+CREATE TABLE Empleado
+(
+IdEmpleado NUMBER(4) NOT NULL,
+DNI VARCHAR2(9),
+Nombre VARCHAR2 (15),
+Apellido1 VARCHAR2 (15),
+Apellido2 VARCHAR2 (15),
+HorarioSemana1 NUMBER (15),
+HorarioSemana2 NUMBER (15),
+HorarioSemana3 NUMBER (15),
+HorarioSemana4 NUMBER (15),
+Localidad VARCHAR2 (30),
+Calle VARCHAR (20),
+PRIMARY KEY IdEmpleado
+);
+
+
+1,11111111A,Juana,ArgÃ¼ez,Sanchez,20,15,18,22,Brenes,Gorrion
+2,22222222A,Andres,Ramos,Jurado,28,25,30,28,Arahal,Jacinto
+3,33333333A,Rocio,Brito,Suarez,32,30,28,35,Arahal,clavel
+4,44444444A,Ruben,Dario,Campos,40,35,35,38,Burguillos,Margarita
+5,55555555A,Maria,Gonzalez,Brul,35,34,30,28,Alanis,Geranio
+6,66666666A,Eusebio,Palma,Requena,30,32,35,30,Carmona,Tulipan
+7,77777777B,Magadalena,Perez,Jimenez,20,15,20,18,Mairena del Alcor,Cerro
+8,88888888B,Fernando,Perez,Ruiz,28,25,26,25,Brenes,Nardo
