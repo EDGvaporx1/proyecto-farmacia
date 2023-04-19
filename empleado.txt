@@ -1,4 +1,4 @@
-CREATE TABLE Empleado
+CREATE TABLE EDG_Empleado
 (
 IdEmpleado NUMBER(4) NOT NULL,
 DNI VARCHAR2(9),
@@ -14,11 +14,11 @@ Calle VARCHAR (20),
 PRIMARY KEY IdEmpleado
 );
 
-INSERT INTO Empleado VALUES (1,'11111111A','Juana','Argüez','Sanchez',20,15,18,22,'Brenes','Gorrión');
-INSERT INTO Empleado VALUES (2,'22222222A','Andrés','Ramos','Jurado',28,25,30,28,'Arahal','Jacinto');
-INSERT INTO Empleado VALUES (3,'33333333A','Rocio','Brito','Suarez',32,30,28,35,'Arahal','clavel');
-INSERT INTO Empleado VALUES (4,'44444444A','Ruben','Dario','Campos',40,35,35,38,'Burguillos','Margarita');
-INSERT INTO Empleado VALUES (5,'55555555A','Maria','Gonzalez','Brul',35,34,30,28,'Alanis','Geranio');
-INSERT INTO Empleado VALUES (6,'66666666A','Eusebio','Palma','Requena',30,32,35,30,'Carmona','Tulipan');
-INSERT INTO Empleado VALUES (7,'77777777B','Magadalena','Perez','Jimenez',20,15,20,18,'Mairena del Alcor','Cerro');
-INSERT INTO Empleado VALUES (8,'88888888B','Fernando','Perez','Ruiz',28,25,26,25,'Brenes','Nardo');
+INSERT INTO EDG_Empleado VALUES (1,'11111111A','Juana','Argüez','Sanchez',20,15,18,22,'Brenes','Gorrión');
+INSERT INTO EDG_Empleado VALUES (2,'22222222A','Andrés','Ramos','Jurado',28,25,30,28,'Arahal','Jacinto');
+INSERT INTO EDG_Empleado VALUES (3,'33333333A','Rocio','Brito','Suarez',32,30,28,35,'Arahal','clavel');
+INSERT INTO EDG_Empleado VALUES (4,'44444444A','Ruben','Dario','Campos',40,35,35,38,'Burguillos','Margarita');
+INSERT INTO EDG_Empleado VALUES (5,'55555555A','Maria','Gonzalez','Brul',35,34,30,28,'Alanis','Geranio');
+INSERT INTO EDG_Empleado VALUES (6,'66666666A','Eusebio','Palma','Requena',30,32,35,30,'Carmona','Tulipan');
+INSERT INTO EDG_Empleado VALUES (7,'77777777B','Magadalena','Perez','Jimenez',20,15,20,18,'Mairena del Alcor','Cerro');
+INSERT INTO EDG_Empleado VALUES (8,'88888888B','Fernando','Perez','Ruiz',28,25,26,25,'Brenes','Nardo');
