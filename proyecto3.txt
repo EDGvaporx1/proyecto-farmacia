@@ -1,0 +1,63 @@
+
+CREATE TABLE edgatencionpaciente
+(
+  IdEmpleado NUMBER(10),
+  SeguridadSocial NUMBER(10),
+  FechaCita DATE,
+  HoraCita VARCHAR(15),
+  Peso NUMBER (6),
+  Azúcar Number (5),
+  Tension VARCHAR2 (8),
+  PRIMARY KEY (IdEmpleado,SeguridadSocial,FechaCita,HoraCita),
+  CONSTRAINT IdEmpleado11 FOREIGN KEY(IdEmpleado) REFERENCES edgEmpleado (IdEmpleado),
+  CONSTRAINT SeguridadSocial2 FOREIGN KEY(SeguridadSocial) REFERENCES edgpaciente (SeguridadSocial)
+
+) ;
+
+
+INSERT INTO edgatencionpaciente VALUES ('1','444444444','15/01/2023','11:30:00','58','130','110/75');			
+INSERT INTO edgatencionpaciente VALUES ('1','222222222','15/01/2023','10:30:00','75','128','130/85');
+INSERT INTO edgatencionpaciente VALUES ('2','666666666','18/01/2023','17:30:00','62','110','135/85');			
+INSERT INTO edgatencionpaciente VALUES ('2','777777777','18/01/2023','18:30:00','92','135','110/70');
+INSERT INTO edgatencionpaciente VALUES ('3','999999999','20/01/2023','11:00:00','60','110','90/60');			
+INSERT INTO edgatencionpaciente VALUES ('3','121212121','20/01/2023','12:00:00','87','125','120/80');
+INSERT INTO edgatencionpaciente VALUES ('4','151515151','23/01/2023','18:00:00','71','125','125/85');			
+INSERT INTO edgatencionpaciente VALUES ('5','444444444','30/01/2023','20:00:00','58','129','110/75');
+INSERT INTO edgatencionpaciente VALUES ('4','222222222','30/01/2023','19:00:00','74','126','125/85');			
+INSERT INTO edgatencionpaciente VALUES ('6','777777777','02/02/2023','12:00:00','90','130','110/80');
+INSERT INTO edgatencionpaciente VALUES ('6','666666666','02/02/2023','11:00:00','61','109','135/85');			
+INSERT INTO edgatencionpaciente VALUES ('7','131313131','04/02/2023','17:30:00','48','108','110/75');
+INSERT INTO edgatencionpaciente VALUES ('8','999999999','05/02/2023','17:00:00','60','112','95/60');			
+INSERT INTO edgatencionpaciente VALUES ('8','121212121','05/02/2023','18:00:00','86','120','120/80');
+INSERT INTO edgatencionpaciente VALUES ('1','151515151','09/02/2023','10:00:00','70','128','115/80');			
+INSERT INTO edgatencionpaciente VALUES ('2','222222222','20/02/2023','10:30:00','73','125','125/85');
+INSERT INTO edgatencionpaciente VALUES ('2','444444444','20/02/2023','11:30:00','59','125','115/80');			
+INSERT INTO edgatencionpaciente VALUES ('3','666666666','24/02/2023','18:00:00','60','110','130/85');
+
+DROP TABLE edgatencionpaciente;
+
+CREATE TABLE edglocalidadpaciente
+(
+  SeguridadSocial NUMBER(10),
+  Localidad VARCHAR(40),
+  CP NUMBER(6),
+  PRIMARY KEY (SeguridadSocial),
+  CONSTRAINT SeguridadSocial3 FOREIGN KEY(SeguridadSocial) REFERENCES edgpaciente (SeguridadSocial)
+  
+) ;
+
+INSERT INTO edglocalidadpaciente VALUES ('111111111','Arahal','41710');
+INSERT INTO edglocalidadpaciente VALUES ('121212121','Sevilla','41007');
+INSERT INTO edglocalidadpaciente VALUES ('131313131','Carmona','41010');
+INSERT INTO edglocalidadpaciente VALUES ('141414141','Carmona','41010');
+INSERT INTO edglocalidadpaciente VALUES ('151515151','Carmona','41010');
+INSERT INTO edglocalidadpaciente VALUES ('222222222','Ecija','41020');
+INSERT INTO edglocalidadpaciente VALUES ('333333333','Carmona','41010');
+INSERT INTO edglocalidadpaciente VALUES ('444444444','Alanis','41910');
+INSERT INTO edglocalidadpaciente VALUES ('555555555','Sevilla','41007');
+INSERT INTO edglocalidadpaciente VALUES ('666666666','Aracena','41900');
+INSERT INTO edglocalidadpaciente VALUES ('777777777','Arahal','41710');
+INSERT INTO edglocalidadpaciente VALUES ('888888888','Tocina','41120');
+INSERT INTO edglocalidadpaciente VALUES ('999999999','Constantina','41111');
+
+			
