@@ -1,0 +1,25 @@
+alter table edgEmpleado
+ add constraint dni23 unique (dni);
+
+alter table edgcompra
+add constraint SeguridadSocial1 FOREIGN KEY (SeguridadSocial) REFERENCES edgpaciente (SeguridadSocial);
+
+ alter table edgcompra
+  drop constraint SeguridadSocial1;
+
+ alter table edgpedidomedicamento
+ add constraint cantidad27
+ check (Cantidad is not null);
+
+CREATE TABLE edgpedidomedicamento4
+(
+  IdEmpleado NUMBER(10),
+  CifLaboratorio NUMBER(10),
+  IdMedicamento NUMBER(10),
+  FechaPedido DATE,
+  LlegadaPedido DATE,
+  Cantidad NUMBER(38)default 0,
+  PRIMARY KEY (IdEmpleado,CifLaboratorio)
+  
+) ;
+
